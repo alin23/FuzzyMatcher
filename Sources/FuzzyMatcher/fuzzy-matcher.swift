@@ -4,6 +4,14 @@ public extension [String] {
     func fuzzyFind(_ pattern: some ToRustStr) -> String? {
         FuzzyMatcher.fuzzyFind(pattern, in: self)
     }
+
+    func fuzzyFindAll(_ pattern: some ToRustStr) -> [String] {
+        FuzzyMatcher.fuzzyFindAll(pattern, in: self)
+    }
+
+    func fuzzyFindIndices(_ pattern: some ToRustStr) -> [(String, [Int])] {
+        FuzzyMatcher.fuzzyFindIndices(pattern, in: self)
+    }
 }
 
 public func fuzzyFind<GenericToRustStr: ToRustStr>(_ pattern: GenericToRustStr, in lines: [String]) -> String? {
