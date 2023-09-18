@@ -1,4 +1,4 @@
-import RustXcframework
+import FuzzyMatcherRust
 
 public extension [String] {
     func fuzzyFind(_ pattern: some ToRustStr) -> String? {

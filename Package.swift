@@ -10,12 +10,12 @@ let package = Package(
 	dependencies: [],
 	targets: [
 		.binaryTarget(
-			name: "RustXcframework",
-			path: "RustXcframework.xcframework"
+			name: "FuzzyMatcherRust",
+			path: "FuzzyMatcherRust.xcframework"
 		),
 		.target(
 			name: "FuzzyMatcher",
-			dependencies: ["RustXcframework"])
+			dependencies: ["FuzzyMatcherRust"])
 	]
 )
 	
