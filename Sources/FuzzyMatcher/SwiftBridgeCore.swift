@@ -1,4 +1,4 @@
-import RustXcframework
+import FuzzyMatcherRust
 import Foundation
 
 extension RustString {

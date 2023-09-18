@@ -1,4 +1,4 @@
-module RustXcframework {
+module FuzzyMatcherRust {
     header "SwiftBridgeCore.h"
     header "fuzzy-matcher.h"
     export *
